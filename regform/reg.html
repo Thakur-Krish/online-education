@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preload" href="reg.css" as="style">
+    <link rel="preload" href="reg.js" as="script">
+    <link rel="stylesheet" href="reg.css">
+    <script src="reg.js" async></script>
+    <script src="reg.js" defer></script>
+    
+   
+    <title>i digital Registration Form</title>
+</head>
+<body>
+    <div class="border1">
+    <form name="data" onsubmit="return valid()"  action="work1/index.html" method="post">
+        <table align="center">
+            <tr>
+                <th>NAME</th>
+                <th><input type="text" name="name" id="name"></th>
+            </tr>
+            <tr>
+                <th>PASSWORD</th>
+                <th><input type="password" name="pswd" id="pswd"></th>
+            </tr>
+            <tr>
+                <th>EMAIL</th>
+                <th><input type="email" name="email" id="email"></th>
+            </tr>
+            <tr>
+                <th>GENDER</th>
+                <th><input type="radio" name="gender" id="male" value="male">MALE
+                <input type="radio" name="gender" id="female" value="female">FEMALE</th>
+            </tr>
+            <tr>
+                <th>QUALIFICATION</th>
+                <th><input type="checkbox" name="qul[]" value="graduation" id="qul">GRADUATE
+                <input type="checkbox" name="qul[]" value="masters" id="qul">MASTERS
+                <input type="checkbox" name="qul[]" value="others" id="qul">OTHERS
+            </th>
+            </tr>
+            <tr>
+                <th>CITY</th>
+                <th><select name="city" id="city">
+                    <option value="select">select</option>
+                    <option value="delhi">delhi</option>
+                    <option value="kolkata">kolkata</option>
+                    <option value="pune">pune</option>
+                    <option value="mumbai">mumbai</option>
+                    <option value="chennai">chennai</option>
+                </select>
+            </th>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <th><textarea name="Address" id="Address" cols="45" rows="5"></textarea></th>
+            </tr>
+            <tr>
+                <th>your pic</th>
+                <th><input type="file" name="pic" id="pic"></th>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit"></th>
+            </tr>
+        </table>
+    </form>
+</div>
+<script src="reg.js"></script>
+</body>
+</html>
+
