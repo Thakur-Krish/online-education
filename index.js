@@ -66,9 +66,3 @@ const darkModeToggle = document.getElementById("darkModeToggle");
 darkModeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 });
-const menuIcon = document.getElementById("menu-icon");
-const navbarMenu = document.querySelector(".navbar ul");
-
-menuIcon.addEventListener("click", () => {
-    navbarMenu.classList.toggle("show");
-});
