@@ -222,3 +222,118 @@ h2 {
 h3 {
     font-size: 1.5rem;
 }
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8); /* Default transparent effect */
+    transition: background 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.scrolled {
+    background:#9997dd; /* Dark blue on scroll */
+}
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: #ff5733; /* Orange progress bar */
+    z-index: 1001;
+    transition: width 0.1s ease;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #004AAD; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none; /* Hide initially */
+}
+#backToTop:hover {
+    background: #ff5733; /* Orange hover effect */
+}
+#darkModeToggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+#menu-icon {
+    display: none; /* Desktop ke liye hidden */
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        text-align: center;
+    }
+    .navbar ul.show {
+        display: flex;
+    }
+    #menu-icon {
+        display: block;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    #home, #about, #services {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .p1, .p2, .p3 {
+        margin: 20px;
+        width: 100%;
+    }
+
+    .m1 img, .m2 img, .m3 img {
+        width: 80%;
+        margin: auto;
+    }
+}
+body {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 14px;
+    }
+}
